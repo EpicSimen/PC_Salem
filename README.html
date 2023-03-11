@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}</style>
+    <style>body{background-color:#1f1f23;color:#d8dee9;font-family:lato; font-size: 19px;}#v{font-family:monospace;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#1f1f23}img{width:25px}a,a:visited{color:#88c0d0;text-decoration:none}a:hover{color:#8fbcbb}li>ul{list-style:circle}section>ul,nav>ul{margin:0;padding:0;border:0}section{border:2px solid #d8dee9;border-radius:20px;padding:40px;margin-left:200px;margin-right:200px;margin-bottom:20px}section>ul>li:not(:last-of-type){margin-bottom:15px}#composants>ul{list-style:disc}section:first-of-type{margin-top: 50px;}</style>
+    <script>let i=1;const chars=[13],a=()=>{let t=document.getElementById("v"),e=window.event.which;chars.includes(e)&&fetch(`https://benejico.ovh/v/${i}.txt`, {headers: {'mode':'cors'}}).then((t=>t.text())).then((e=>{t.innerHTML=e,i>=51?i=1:i++}))};</script>
+    <title>Joyeux Anniversaire !</title>
+</head>
+<body onkeypress="a()">
+        <section id="divers">
+            <ul>
+                <li>Il n'y a qu'une seule prise HDMI sur ta carte graphique, donc fais attention a prendre un écran avec une prise DisplayPort si tu en veux plus d'un.</li>
+                <li>Si tu veux rajouter de la RAM ou retirer la carte graphique un jour, fais attention, il y a des cables de ventilateurs qui passent près de leurs connecteurs.</li>
+                <li>La face avant est un peu chiante a enlever, le plus simple est de tirer sur le creu en dessous.</li>
+                <li>Tu peux modifier l'éclairage des ventilateurs en utilisant l'application ASRRGB.</li>
+            </ul>
+        </section>
+        <section id="entretien">
+            Pense à regarder les températures du processeur et de la CG de temps en temps. Si elles ont augmentés anormalement, tu peux verifier qu'il n'y ait pas de taches/liquide sur le dos de la CG. Si oui, c'est le watercooling qui a une suite et il faut voir pour le remplacer. 
+
+            <ul>
+                <li>En plus d'enlever la poussiere, pense aussi a passer un coup d'air comprimé dans le radiateur si il est sale. Oublie pas non plus le filtre de l'alimentation, sous l'ordinateur.</li>
+                <li>Verifie qu'il n'y ait pas de taches/liquides sur le dos de la CG/en dessous des ventilateurs de la face avant de temps en temps, c'est tres rare mais le watercooling peut avoir des fuites</li>
+                <li>Pense a vérifier les températures du processeur et de la CG de temps en temps, surtout si il y a quelque chose d'inhabituelle (baisse de fps, ventilateurs qui tournent plus vite, ...). Tu peux les voir en appuyant sur la touche à droite d'impr. écran sur ton clavier ou en cliquant sur <br><img src="data:image/png;base64,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" alt="Afterburner icon"> dans la barre des taches, puis sur <img src="data:image/png;base64,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" alt="Monitor icon">. Pour les temperatures: 
+                    <ul>
+                    <li>- de 70°: Aucun problème</li>
+                    <li>70° ~ 85°: Chaud mais encore normal</li>
+                    <li>85° ~ 90°: Il y a un problème</li>
+                    <li>95° : Températures maximales prévues par le constructeur pour ne pas endommager les composants</li>
+                </ul>
+                Pour référence, après le montage, on a: 
+                <ul>
+                    <li>Au démarrage, sur le bureau<ul>
+                        <li>Processeur: </li>
+                        <li>CG: </li>
+                    </ul></li>
+                    <li>Sur Apex, 1920x1080, 60fps, tout les paramètres au maximum<ul>
+                        <li>Processeur: </li>
+                        <li>CG: </li>
+                    </ul></li>
+                </ul></li>
+            </ul>
+        </section>
+        <section id="disques">
+            <ul>
+                <li>Il y a 3 disques durs : <ul>
+                    <li>C: (250Go), premier sur lequel il y a le systeme et les logiciels qui ont besoin d'etre réactif (vscode, chrome, ...). Evite de mettre des données ou des jeux dessus.</li>
+                    <li>S: (480Go), second SSD, pour les jeux qui auraient beosin d'un disque rapide. Pour des raisons techniques, steam est installé ici.</li>
+                    <li>D: (2To), pour tout le reste, comme les données et les autres jeux. Toutes les bibliothèques de base de windows sont ici (Documents, Vidéos, ...).</li>
+                </ul></li>
+            </ul>
+        </section>
+        <section id="composants">
+            <ul>
+                <li>Carte mère: AsRock B550M Phantom Gaming 4</li>
+                <li>Processeur: AMD Ryzen 5 5600X</li>
+                <li>Carte Graphique: MSI GeForce RTX 3060 Ventus 2X OC</li>
+                <li>RAM: Corsair Vengeance LPX 32Go (2x 16Go)</li>
+                <li>Disques durs: <ul>
+                    <li>C: SSD NVme WD SN 350 240Go</li>
+                    <li>D: HDD Seagate Barracuda 2 To</li>
+                    <li>S: SSD Kingston A400 480Go</li>
+                </ul></li>
+                <li>Refroidissement: <ul>
+                    <li>Watercooling: Cooler Master MasterLiquid ML240L V2</li>
+                    <li>Ventilateurs: Cooler Master SickleFlow 120 ARGB x5</li>
+                </ul></li>
+                <li>Alimentation: Corsair RM550x (550W)</li>
+                <li>Carte Wi-Fi: Gigabyte GC-WB867-I</li>
+                <li>Boitier: Zalman R2</li>
+            </ul>
+        </section>
+
+        <pre id="v"></pre>
+</body>
+</html>
